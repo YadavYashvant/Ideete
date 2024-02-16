@@ -2,11 +2,14 @@ import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { JSX, SVGProps } from "react"
+import { NavBar } from "./nav-bar"
 
 export function HomePage() {
   return (
     <>
-      {/* <div className="bg-gray-50 border-t border-b border-gray-200">
+      {
+        <NavBar />
+        /* <div className="bg-gray-50 border-t border-b border-gray-200">
         <div className="container flex flex-col gap-4 justify-center py-4 px-4 text-center md:flex-row md:gap-6 md:px-6 lg:gap-8">
         <Link
             className="flex items-center justify-center space-x-2 text-2xl font-extrabold tracking-tighter rounded-full bg-gray-900 w-12 h-12 text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
