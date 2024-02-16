@@ -10,10 +10,10 @@ export function HomePage() {
       <NavBar />
       <section className="w-full py-6 md:py-12 lg:py-16 flex item-center justify-center">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
-          <div className="space-y-4 md:mr-10 lg:mr-16 md:space-y-8">
+          <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Find your next big idea</h1>
-              <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+              <h1 className="text-5xl font-bold tracking-tighter sm:text-5xl my-6">Find your next big idea</h1>
+              <p className="max-w-[800px] text-gray-500 md:text-xl dark:text-gray-400">
                 The platform for discovering untapped potential. Enter your ideas below to see if they have already been
                 explored.
               </p>
@@ -22,7 +22,7 @@ export function HomePage() {
               <div className="w-full max-w-[300px]">
                 <div className="relative w-full">
                   <Input className="w-full peer h-10" placeholder="Enter your idea" type="email" />
-                  <Button className="top-0 right-0 h-10 translate-x-[230%] translate-y-[-100%]">Submit</Button>
+                  <Button className="top-0 right-0 h-10 translate-x-[230%] translate-y-[-100%] mx-6">Submit</Button>
                 </div>
               </div>
             </div>
