@@ -63,7 +63,7 @@ export function HomePage() {
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Find your next big idea</h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                The platform for discovering untapped potential. Enter your ideas below to see if they've already been
+                The platform for discovering untapped potential. Enter your ideas below to see if they have already been
                 explored.
               </p>
             </div>
