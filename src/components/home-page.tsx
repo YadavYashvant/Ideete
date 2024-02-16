@@ -20,9 +20,9 @@ export function HomePage() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <div className="w-full max-w-[300px]">
-                <div className="relative">
+                <div className="relative w-full">
                   <Input className="w-full peer h-10" placeholder="Enter your idea" type="email" />
-                  <Button className="absolute top-0 right-0 h-10 translate-y-[-50%]">Submit</Button>
+                  <Button className="top-0 right-0 h-10 translate-x-[230%] translate-y-[-100%]">Submit</Button>
                 </div>
               </div>
             </div>
