@@ -8,7 +8,7 @@ export function HomePage() {
   return (
     <>
       <NavBar />
-      <section className="w-full py-6 md:py-12 lg:py-16">
+      <section className="w-full py-6 md:py-12 lg:py-16 flex item-center justify-center">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
           <div className="space-y-4 md:mr-10 lg:mr-16 md:space-y-8">
             <div className="space-y-2">
@@ -36,16 +36,16 @@ export function HomePage() {
           />
         </div>
       </section>
-      <div className="container flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6">
-        <div className="grid gap-4 md:grid-cols-2 xl:gap-8">
-          <div className="flex flex-col justify-center space-y-4">
+      <section className="container flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6 item-center justify-center">
+        <div className="grid gap-4 md:grid-cols-2 xl:gap-8 item-center justify-center">
+          <div className="flex flex-col items-center justify-center space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">How it works</h2>
             <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
               Our AI-powered platform scans the web for related content and returns a comprehensive report on the
               originality of your idea.
             </p>
           </div>
-          <div className="flex flex-col justify-center space-y-4">
+          <div className="flex flex-col justify-center items-center space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Key features</h2>
             <ul className="grid gap-4 sm:grid-cols-2">
               <li className="flex space-x-4">
@@ -87,8 +87,8 @@ export function HomePage() {
             </ul>
           </div>
         </div>
-      </div>
-      <section className="w-full py-12">
+      </section>
+      <section className="w-full py-12 flex items-center justify-center my-14">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Ready to get started?</h2>
@@ -96,14 +96,14 @@ export function HomePage() {
               Sign up today and unlock the power of idea detection.
             </p>
           </div>
-          <div className="w-full max-w-[400px] space-y-2">
+          <div className="w-full max-w-[400px] space-y-10">
             <Input placeholder="Enter your email" type="email" />
-            <Button className="w-full h-10">Sign Up</Button>
+            <Button className="w-full h-10 my-10">Sign Up</Button>
           </div>
         </div>
       </section>
 
-      // Navbar
+      {/* Footer */}
 
       <div className="border-t border-gray-200">
         <div className="container flex flex-col gap-4 py-4 px-4 md:flex-row md:items-center md:justify-between md:gap-6 md:px-6 lg:gap-8">
