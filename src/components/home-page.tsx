@@ -102,6 +102,9 @@ export function HomePage() {
           </div>
         </div>
       </section>
+
+      // Navbar
+
       <div className="border-t border-gray-200">
         <div className="container flex flex-col gap-4 py-4 px-4 md:flex-row md:items-center md:justify-between md:gap-6 md:px-6 lg:gap-8">
           <p className="text-sm text-center text-gray-500 md:text-left dark:text-gray-400">
