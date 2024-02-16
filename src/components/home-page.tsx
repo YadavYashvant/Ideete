@@ -36,8 +36,8 @@ export function HomePage() {
           />
         </div>
       </section>
-      <section className="container flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6 item-center justify-center">
-        <div className="grid gap-4 md:grid-cols-2 xl:gap-8 item-center justify-center">
+      <section className="container flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6 items-center justify-center">
+        <div className="grid gap-4 md:grid-cols-2 xl:gap-10 ml-40 item-center justify-center">
           <div className="flex flex-col items-center justify-center space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">How it works</h2>
             <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
