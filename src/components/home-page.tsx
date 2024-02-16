@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { JSX, SVGProps } from "react"
 
 export function HomePage() {
   return (
@@ -176,7 +177,7 @@ export function HomePage() {
 }
 
 
-function HomeIcon(props) {
+function HomeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -197,7 +198,7 @@ function HomeIcon(props) {
 }
 
 
-function CheckCircleIcon(props) {
+function CheckCircleIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
