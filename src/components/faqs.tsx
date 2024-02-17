@@ -3,7 +3,7 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 function Faqs(){
 
     const Content_1 = (
-        <div>Ideete is an innovative platform empowering users to refine ideas with cutting-edge technology. It offers a seamless experience, enabling users to scrutinize idea uniqueness. Through algorithms, Ideete provides insights and personalized suggestions. Whether you're an entrepreneur, artist, or thinker, Ideete guides you in refining ideas to perfection.</div>
+        <div>Ideete is an innovative platform empowering users to refine ideas with cutting-edge technology. It offers a seamless experience, enabling users to scrutinize idea uniqueness. Through algorithms, Ideete provides insights and personalized suggestions. Whether you are an entrepreneur, artist, or thinker, Ideete guides you in refining ideas to perfection.</div>
       );
       const Content_2 = (
         <div>Users can effortlessly submit their ideas through the platform, where their uniqueness is meticulously evaluated against existing ones. If an idea lacks originality, Ideete offers tailored suggestions to help differentiate it from the rest, ensuring each concept stands out and thrives in the competitive landscape.</div>
