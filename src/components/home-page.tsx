@@ -1,12 +1,10 @@
 'user client'
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
 import { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
 import animationData from "@/assets/idea-anim.json"
-import { ButtonGroup } from "@nextui-org/react"
-
+import { Button, ButtonGroup, Card, CardFooter, Image } from "@nextui-org/react"
 
 const isBrowser = typeof window !== "undefined";
 
@@ -34,13 +32,34 @@ export function HomePage() {
               </div>
             </div>
           </div>
-          <img
+
+          <Card
+            isFooterBlurred
+            radius="lg"
+            className="border-none"
+          >
+            <Image
+              alt="Woman listing to music"
+              className="object-cover"
+              height={600}
+              src="https://www.elmhurst.edu/wp-content/uploads/2022/04/generate-ideas-illustration.jpg"
+              width={600}
+            />
+            <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+              <p className="text-tiny text-white/80">Available soon.</p>
+              <Button className="text-tiny text-white bg-black/20" variant="flat" color="default" radius="lg" size="sm">
+                Notify me
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* <img
             alt="Hero"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-video"
             height="300"
             src="https://res.cloudinary.com/djirdehhp/image/upload/v1633940003/idea-anim_1.gif"
             width="500"
-          />
+          /> */}
           
         </div>
       </section>
