@@ -3,21 +3,19 @@ import { JSX, SVGProps } from "react"
 import { useState } from "react"
 import React from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem} from "@nextui-org/react";
+import { HomeIcon } from "@radix-ui/react-icons";
+import { BedDoubleIcon } from "lucide-react";
 
 
 export function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
+    "Home",
+    "Features",
+    "Workspace",
+    "Contact",
+    "Settings",
     "Log Out",
   ];
 
@@ -29,25 +27,25 @@ export function NavBar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          
-          <p className="font-bold text-inherit">Ideete</p>
+          <BedDoubleIcon className="w-8 h-8 mr-3" />
+          <p className="font-bold text-inherit text-2xl">Ideete</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link href="#">
+        <NavbarItem isActive>
+          <Link href="#"  aria-current="page" color="success">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page" color="success">
+        <NavbarItem>
+          <Link href="#">
             Features
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link href="#">
-            Pricing
+            Workspace
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -106,6 +104,7 @@ function BellIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
+
 
 
 function ChevronRightIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {

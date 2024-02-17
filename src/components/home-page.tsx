@@ -2,7 +2,7 @@
 import { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
 import animationData from "@/assets/idea-anim.json"
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Link, CardHeader, Divider, Image, Input } from "@nextui-org/react"
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Link, CardHeader, Divider, Image, Input, Textarea } from "@nextui-org/react"
 import Footer from "./footer"
 
 const isBrowser = typeof window !== "undefined";
@@ -15,36 +15,45 @@ export function HomePage() {
         <section className="bg-gradient-to-r from-transparent to-gray-900 items-center">
         <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12">
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
-            <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
-              <div className="space-y-2">
-                <h1 className="text-5xl font-bold tracking-tighter sm:text-5xl my-6">Find your next big idea</h1>
-                <p className="max-w-[800px] text-gray-500 md:text-xl dark:text-gray-400">
+            <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8 ">
+              <div className="space-y-2 max-sm:mx-20">
+                <h1 className=" text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter sm:text-4xl my-6">Find your next big idea</h1>
+                <p className="text-2xl max-w-[700px] text-gray-500 md:text-2xl dark:text-gray-400">
                   The platform for discovering untapped potential. Enter your ideas below to see if they have already been
                   explored.
                 </p>
-              </div>
-              <div className="flex w-full flex-wrap md:flex-nowrap gap-4 md:items-center">
-              <Input type="text" label="Enter your own idea" className=""/>
-              <Button color="success" size="lg"> Search </Button>
-            </div>
+              </div>  
+                <Card isBlurred className="bg-gray-800 max-sm:mx-10 px-10 py-5">
+                <div className="flex w-full flex-wrap md:flex-nowrap gap-4 md:items-center max-sm:flex max-sm:items-center max-sm:mx-auto">
+                <Textarea
+                  variant="faded"
+                  color="primary"
+                  label="Your Idea"
+                  className="text-black w-full"
+                  content="red"
+                />
+
+                <Button color="success" size="lg"> Search </Button>
+                </div>
+                </Card>
             </div>
 
             <Card
               isFooterBlurred
               radius="lg"
-              className="border-none hover:shadow-2xl transition-shadow duration-300 relative w-full md:w-[500px] h-[300px] md:h-[400px] lg:h-[500px] before:rounded-xl"
+              className="bg-black relative w-full md:w-[500px] lg:h-[600px] h-[40vh] overflow-hidden rounded-xl shadow-small before:bg-gray-900 max-sm:mx-10 max-sm:my-10"
             >
               <Image
                 alt="An Image of idea generation"
-                className="object-cover"
+                className="object-fill w-full h-full"
                 height={600}
-                src="https://www.elmhurst.edu/wp-content/uploads/2022/04/generate-ideas-illustration.jpg"
+                src="https://images.unsplash.com/photo-1529310399831-ed472b81d589?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 width={600}
               />
-              <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-                <p className="text-tiny text-white/80">Available soon.</p>
-                <Button className="text-tiny text-white bg-black/20" variant="flat" color="default" radius="lg" size="sm">
-                  Notify me
+              <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10 h-50">
+                <p className="text-tiny text-white/30">Explore More</p>
+                <Button className="text-tiny text-white bg-black/20" variant="light" color="default" radius="lg" size="sm">
+                  Vision
                 </Button>
               </CardFooter>
             </Card>
@@ -142,8 +151,9 @@ export function HomePage() {
             </div>
           </div>
         </section>
-        <section className="min-w-[100%] flex flex-col py-8 px-4 items-center justify-center my-20">
-          <Card className="flex items-center justify-center bg-gray-900 text-white my-10">
+
+        <section className="w-full flex flex-col py-8 px-4 items-center justify-center my-20">
+          <Card className="min-w-[80%] bg-gray-900 text-white my-10">
             <section className="py-12 flex items-center justify-center my-14">
               <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6">
                 <div className="space-y-2">
@@ -169,7 +179,7 @@ export function HomePage() {
 }
 
 
-function HomeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
+function IdeaIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -183,8 +193,10 @@ function HomeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
       strokeLinecap="round"
       strokeLinejoin="round"
     >
-      <path d="m3 9 9-7 7v11a2 2 0 1-2 2H5a2 1-2-2z" />
-      <polyline points="9 22 12 15" />
+      <path d="M12 14l9-5-9-5-9 5 9 5z" />
+      <path d="M12 14l9-5-9-5-9 5 9 5z" />
+      <path d="M12 14l9-5-9-5-9 5 9 5z" />
+      <path d="M12 14l9-5-9-5-9 5 9 5z" />
     </svg>
   )
 }
