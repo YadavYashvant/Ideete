@@ -9,13 +9,7 @@ function Faqs(){
         <div>Users can effortlessly submit their ideas through the platform, where their uniqueness is meticulously evaluated against existing ones. If an idea lacks originality, Ideete offers tailored suggestions to help differentiate it from the rest, ensuring each concept stands out and thrives in the competitive landscape.</div>
       );
       const Content_3 = (
-        <div>Begin your Ideete journey by visiting our website and registering for an account. Once signed up, unleash your creativity by submitting ideas and refining them using our intuitive platform. Join a community of innovators and turn your concepts into reality with Ideete's support and guidance.</div>
-      );
-      const Content_4 = (
-        <div>If your idea lacks uniqueness, Ideete offers personalized suggestions and enhancements to distinguish it from existing ideas, ensuring its originality and impact. Collaborate with our platform to refine your concept and stand out in the competitive landscape, unleashing its full potential with tailored guidance from Insightify.</div>
-      );
-      const Content_5= (
-        <div>Yes, Insightify is completely free for all users. Signing up is quick and easy, allowing you to immediately begin submitting your ideas for refinement. Our platform offers a seamless experience, guiding you through the process of enhancing your concepts without any cost. Join us today and unlock the full potential of your ideas with Insightify.</div>
+        <div>Begin your Ideete journey by visiting our website and registering for an account. Once signed up, unleash your creativity by submitting ideas and refining them using our intuitive platform. Join a community of innovators and turn your concepts into reality with Ideete support and guidance.</div>
       );
     return (
     <>
@@ -68,13 +62,7 @@ function Faqs(){
       <AccordionItem key="3" aria-label="Accordion 3" title="How can I get started with Ideete?">
         {Content_3}
       </AccordionItem>
-    <AccordionItem key="4" aria-label="Accordion 4" title="What happens if my idea is not unique?">
-        {Content_4}
-      </AccordionItem>
-      <AccordionItem key="5" aria-label="Accordion 5" title="Is Ideete free to use?">
-        {Content_5}
-      </AccordionItem>  
-      </Accordion>
+    </Accordion>
     </>
     );
 }
