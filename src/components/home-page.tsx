@@ -3,9 +3,14 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
+import animationData from "@/assets/idea-anim.json"
+import { ButtonGroup } from "@nextui-org/react"
+
+
+const isBrowser = typeof window !== "undefined";
 
 export function HomePage() {
-  return (
+  return(
     <>
       <NavBar />
       <section className="w-full py-6 md:py-12 lg:py-16 flex item-center justify-center">
@@ -22,7 +27,8 @@ export function HomePage() {
               <div className="w-full max-w-[300px]">
                 <div className="relative w-full">
                   <Input className="w-full peer h-10" placeholder="Enter your idea" type="email" />
-                  <Button className="top-0 right-0 h-10 translate-x-[230%] translate-y-[-100%] mx-6">Submit</Button>
+                  {/* <Button className="top-0 right-0 h-10 translate-x-[230%] translate-y-[-100%] mx-6">Submit</Button> */}
+                  
                 </div>
               </div>
             </div>
@@ -31,9 +37,10 @@ export function HomePage() {
             alt="Hero"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-video"
             height="300"
-            src="/placeholder.svg"
+            src="https://res.cloudinary.com/djirdehhp/image/upload/v1633940003/idea-anim_1.gif"
             width="500"
           />
+          
         </div>
       </section>
       <section className="container flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6 items-center justify-center">

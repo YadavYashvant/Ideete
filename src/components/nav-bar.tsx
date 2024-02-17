@@ -1,10 +1,10 @@
+import { Button } from "@nextui-org/react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { JSX, SVGProps } from "react"
 
 export function NavBar() {
   return (
-    <div className="bg-gray-100 border-t border-b border-gray-200 dark:border-gray-700 dark:bg-gray-800">
+    <div className="bg-gray-900 border-t border-b border-gray-900 dark:border-gray-700 dark:bg-gray-800">
       <div className="w-full mx-auto max-w-7xl">
         <nav className="flex flex-row items-center justify-between px-4 h-14 md:px-6 lg:px-8">
           <div className="flex items-center space-x-2">
@@ -27,21 +27,21 @@ export function NavBar() {
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <Button size="sm" variant="outline">
+            <Button size="sm" color="primary">
               Sign in
             </Button>
             <Button size="sm">Sign up</Button>
           </div>
           <div className="md:hidden flex items-center space-x-2">
-            <Button size="icon" variant="ghost">
+            <Button variant="ghost">
               <SearchIcon className="h-4 w-4" />
               <span className="sr-only">Toggle search bar</span>
             </Button>
-            <Button size="icon" variant="ghost">
+            <Button variant="ghost">
               <BellIcon className="h-4 w-4" />
               <span className="sr-only">Toggle notifications</span>
             </Button>
-            <Button size="icon" variant="ghost">
+            <Button variant="ghost">
               <ChevronRightIcon className="h-4 w-4" />
               <span className="sr-only">Toggle sidebar</span>
             </Button>
