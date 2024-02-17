@@ -20,7 +20,7 @@ export function NavBar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered isBlurred className="bg-gray-800 border-gray-700">
+    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered isBlurred className="bg-gray-1000 border-gray-700">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}

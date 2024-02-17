@@ -1,20 +1,42 @@
 'use client'
-import { JSX, SVGProps } from "react"
+import React, { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
+import { useScroll, useTransform } from "framer-motion";
 import animationData from "@/assets/idea-anim.json"
 import { Button, ButtonGroup, Card, CardBody, CardFooter, Link, CardHeader, Divider, Image, Input, Textarea} from "@nextui-org/react"
 import Footer from "./footer"
+import { GoogleGeminiEffect } from "./ui/gemini-effect";
 //import { Textarea } from "@/components/ui/textarea"
 
 const isBrowser = typeof window !== "undefined";
 
 export function HomePage() {
+
+  const ref = React.useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+ 
+  const pathLengthFirst = useTransform(scrollYProgress, [0, 0.8], [0.2, 1.2]);
+  const pathLengthSecond = useTransform(scrollYProgress, [0, 0.8], [0.15, 1.2]);
+  const pathLengthThird = useTransform(scrollYProgress, [0, 0.8], [0.1, 1.2]);
+  const pathLengthFourth = useTransform(scrollYProgress, [0, 0.8], [0.05, 1.2]);
+  const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
+ 
+
   return(
       <>
       
         <NavBar/>
-        <section className="bg-gradient-to-r from-transparent to-gray-900 items-center">
-        <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12">
+        <div className="bg-gray-950 bg-grid-white/[0.1]">
+      {/* Radial gradient for the container to give a faded look */}
+      {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
+    
+    
+        <section className="bg-gradient-to-r from-transparent to-gray-950 items-center">
+        <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12"
+        >
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
             <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
               <div className="space-y-2 max-sm:mx-12">
@@ -70,6 +92,37 @@ export function HomePage() {
             
           </div>
         </section>
+
+        <div
+          className="h-[300vh] w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+          ref={ref}>
+
+          <GoogleGeminiEffect
+            pathLengths={[
+              pathLengthFirst,
+              pathLengthSecond,
+              pathLengthThird,
+              pathLengthFourth,
+              pathLengthFifth,
+            ]}
+          />
+
+        </div>
+
+        {/* <div
+          className="h-[400vh] w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+          ref={ref}>
+          <GoogleGeminiEffect
+            pathLengths={[
+              pathLengthFirst,
+              pathLengthSecond,
+              pathLengthThird,
+              pathLengthFourth,
+              pathLengthFifth,
+            ]}
+          />
+        </div> */}
+
         <section className="w-full flex flex-col gap-4 py-8 md:gap-10 md:px-6 items-center justify-center my-5 space-x-4">
           <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[90%]">
 
@@ -184,6 +237,7 @@ export function HomePage() {
         
         <Footer/>
       </section>
+      </div>
     </>
   )
 }
