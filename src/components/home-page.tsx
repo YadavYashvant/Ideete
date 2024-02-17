@@ -10,9 +10,10 @@ const isBrowser = typeof window !== "undefined";
 export function HomePage() {
   return(
       <>
-      <div className="bg">
+      <div className="bg-gradient-to-r from-transparent to-gray-900">
+        
         <NavBar/>
-        <section className="w-full py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30">
+        <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 my-12">
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
             <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
               <div className="space-y-2">
@@ -58,7 +59,7 @@ export function HomePage() {
             
           </div>
         </section>
-        <section className="w-full flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6 items-center justify-center my-7 space-x-4">
+        <section className="w-full flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6 items-center justify-center my-20 space-x-4">
           <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[80%]">
 
         <Card className="min-w-[100%] bg-gray-900 text-white hover:bg-gray-800">
