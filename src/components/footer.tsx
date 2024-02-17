@@ -2,7 +2,7 @@ import { Card, Divider } from "@nextui-org/react";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <Card isBlurred radius="lg" className="bg-gray-1000 mx-7" shadow="md">
+    <Card isBlurred radius="lg" className="bg-gray-1000 mx-1" shadow="md">
       <footer className="dark:bg-gray-900 text-white">
         <div className="mx-auto max-w-full-xl pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">

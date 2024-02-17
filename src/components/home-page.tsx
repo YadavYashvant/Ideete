@@ -16,15 +16,15 @@ export function HomePage() {
         <section className="bg-gradient-to-r from-transparent to-gray-900 items-center">
         <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12">
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
-            <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8 max-sm:px-5">
-              <div className="space-y-2 max-sm:mx-20">
+            <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
+              <div className="space-y-2 max-sm:mx-12">
                 <h1 className=" text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter sm:text-4xl my-6">Find your next big idea</h1>
                 <p className="text-2xl max-w-[700px] text-gray-500 md:text-2xl dark:text-gray-400">
                   The platform for discovering untapped potential. Enter your ideas below to see if they have already been
                   explored.
                 </p>
               </div>  
-                <Card isBlurred className="bg-gray-800 mt-10 max-sm:mx-10 px-10 py-5 lg:h-[300px]">
+                <Card isBlurred className="bg-gray-800 mt-10 max-sm:mx-1 px-10 py-5 lg:h-[300px]">
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-4 md:items-center max-sm:flex max-sm:items-center max-sm:mx-auto">
                 <Textarea
                   variant="underlined"
@@ -43,7 +43,7 @@ export function HomePage() {
             <Card
               isFooterBlurred
               radius="lg"
-              className="bg-black relative lg:h-[600px] h-[40vh] overflow-hidden rounded-xl shadow-small before:bg-gray-900 max-sm:my-10 max-sm:mx-10"
+              className="bg-black relative lg:h-[600px] h-[40vh] overflow-hidden rounded-xl shadow-small before:bg-gray-900 max-sm:my-10 max-sm:mx-1"
             >
               <Image
                 alt="An Image of idea generation"
@@ -70,8 +70,8 @@ export function HomePage() {
             
           </div>
         </section>
-        <section className="w-full flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6 items-center justify-center my-20 space-x-4">
-          <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[80%]">
+        <section className="w-full flex flex-col gap-4 py-8 md:gap-10 md:px-6 items-center justify-center my-5 space-x-4">
+          <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[90%]">
 
         <Card className="min-w-[100%] bg-gray-900 text-white hover:bg-gray-800">
           <CardHeader className="flex gap-3">
@@ -106,7 +106,7 @@ export function HomePage() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl sm:my-10 mb-6 max-sm:mt-10">Key features</h2>
               <ul className="grid gap-4 sm:grid-cols-2">
                 <li className="flex space-x-4">
-                  <Card className="bg-gray-900 text-white p-4">
+                  <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800">
                   <CheckCircleIcon className="h-5 w-5 flex-shrink-0 my-2" />
                   <div>
                     <h3 className="font-semibold">Real-time analysis</h3>
@@ -117,7 +117,7 @@ export function HomePage() {
                   </Card>
                 </li>
                 <li className="flex space-x-4">
-                  <Card className="bg-gray-900 text-white p-4">
+                  <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800">
                   <CheckCircleIcon className="h-5 w-5 flex-shrink-0 my-2" />
                   <div>
                     <h3 className="font-semibold">Comprehensive search</h3>
@@ -128,7 +128,7 @@ export function HomePage() {
                   </Card>
                 </li>
                 <li className="flex space-x-4">
-                  <Card className="bg-gray-900 text-white p-4">
+                  <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800">
                   <CheckCircleIcon className="h-5 w-5 flex-shrink-0 my-2" />
                   <div>
                     <h3 className="font-semibold">Collaboration tools</h3>
@@ -139,7 +139,7 @@ export function HomePage() {
                   </Card>
                 </li>
                 <li className="flex space-x-4">
-                  <Card className="bg-gray-900 text-white p-4">
+                  <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800">
                   <CheckCircleIcon className="h-5 w-5 flex-shrink-0 my-2" />
                   <div>
                     <h3 className="font-semibold">Customizable alerts</h3>
@@ -154,8 +154,8 @@ export function HomePage() {
           </div>
         </section>
 
-        <section className="w-full flex flex-col py-8 px-4 items-center justify-center my-20">
-          <Card className="min-w-[80%] bg-gray-900 text-white my-10">
+        <section className="w-full flex flex-col py-8 px-2 items-center justify-center my-10">
+          <Card className="min-w-[90%] bg-gray-900 text-white my-10">
             <section className="py-12 flex items-center justify-center my-14">
               <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6">
                 <div className="space-y-2">
@@ -165,7 +165,15 @@ export function HomePage() {
                   </p>
                 </div>
                 <div className="w-full max-w-[400px] space-y-10">
-                  <Input placeholder="Enter your email" className="bg-gray-800" variant="flat" type="email" isClearable/>
+                  <Input 
+                  placeholder="Enter your email"
+                  color="success"
+                  classNames={{innerWrapper: "bg-gray-800", input: "text-white"}}
+                  className="color-white"
+                  variant="underlined" 
+                  type="email" 
+                  isClearable
+                  />
                   <Button color="success" className="w-full h-10 my-10" variant="shadow" type="submit">Sign Up</Button>
                 </div>
               </div>
