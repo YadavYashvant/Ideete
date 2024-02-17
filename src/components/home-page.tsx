@@ -198,7 +198,7 @@ export function HomePage() {
           </Card>
 
           <Card className="p-10 bg-gray-800 w-[90%] flex items-center justify-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl sm:my-10 max-sm:mt-10">FAQs</h2>
+          <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-5xl sm:my-10 max-sm:mt-10">FAQs</h2>
           <Faqs/>
           </Card>
 
