@@ -1,3 +1,4 @@
+'user client'
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -12,7 +13,7 @@ const isBrowser = typeof window !== "undefined";
 export function HomePage() {
   return(
     <>
-      <NavBar />
+      <NavBar/>
       <section className="w-full py-6 md:py-12 lg:py-16 flex item-center justify-center">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
           <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
