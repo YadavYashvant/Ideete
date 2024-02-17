@@ -1,10 +1,9 @@
 'user client'
 import Link from "next/link"
-import { Input } from "@/components/ui/input"
 import { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
 import animationData from "@/assets/idea-anim.json"
-import { Button, ButtonGroup, Card, CardFooter, Image } from "@nextui-org/react"
+import { Button, ButtonGroup, Card, CardFooter, Image, Input } from "@nextui-org/react"
 
 const isBrowser = typeof window !== "undefined";
 
@@ -22,15 +21,10 @@ export function HomePage() {
                 explored.
               </p>
             </div>
-            <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <div className="w-full max-w-[300px]">
-                <div className="relative w-full">
-                  <Input className="w-full peer h-10" placeholder="Enter your idea" type="email" />
-                  {/* <Button className="top-0 right-0 h-10 translate-x-[230%] translate-y-[-100%] mx-6">Submit</Button> */}
-                  
-                </div>
-              </div>
-            </div>
+            <div className="flex w-full flex-wrap md:flex-nowrap gap-4 md:items-center">
+            <Input type="text" label="Enter your own idea" className=""/>
+            <Button color="success" size="lg"> Search </Button>
+          </div>
           </div>
 
           <Card
