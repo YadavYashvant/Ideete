@@ -10,10 +10,10 @@ const isBrowser = typeof window !== "undefined";
 export function HomePage() {
   return(
       <>
-      <div className="bg-gradient-to-r from-transparent to-gray-900">
-        
+      
         <NavBar/>
-        <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 my-12">
+        <section className="bg-gradient-to-r from-transparent to-gray-900 items-center">
+        <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12">
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
             <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
               <div className="space-y-2">
@@ -63,26 +63,26 @@ export function HomePage() {
           <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[80%]">
 
         <Card className="min-w-[100%] bg-gray-900 text-white hover:bg-gray-800">
-        <CardHeader className="flex gap-3">
-          <p className="text-4xl font-bold">How it works</p>
-        </CardHeader>
-        <Divider className="bg-black"/>
-        <CardBody>
-          <p className="text-lg">Our AI-powered platform scans the 
-            web for related content and returns
-             a comprehensive report on the originality of your idea.</p>
-        </CardBody>
-        <Divider className="bg-black"/>
-        <CardFooter>
-          <Link
-            isExternal
-            showAnchorIcon
-            href="https://github.com/"
-          >
-            Visit source code on GitHub
-          </Link>
-        </CardFooter>
-      </Card>
+          <CardHeader className="flex gap-3">
+            <p className="text-4xl font-bold">How it works</p>
+          </CardHeader>
+          <Divider className="bg-black"/>
+          <CardBody>
+            <p className="text-lg">Our AI-powered platform scans the 
+              web for related content and returns
+              a comprehensive report on the originality of your idea.</p>
+          </CardBody>
+          <Divider className="bg-black"/>
+          <CardFooter>
+            <Link
+              isExternal
+              showAnchorIcon
+              href="https://github.com/"
+            >
+              Visit source code on GitHub
+            </Link>
+          </CardFooter>
+        </Card>
 
             {/* <div className="flex flex-col items-center justify-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">How it works</h2>
@@ -92,7 +92,7 @@ export function HomePage() {
               </p>
             </div> */}
             <div className="flex flex-col space-between items-center space-y-4 space-x-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-6">Key features</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl sm:my-10 mb-6">Key features</h2>
               <ul className="grid gap-4 sm:grid-cols-2">
                 <li className="flex space-x-4">
                   <Card className="bg-gray-900 text-white p-4">
@@ -142,30 +142,28 @@ export function HomePage() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 flex items-center justify-center my-14">
-          <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Ready to get started?</h2>
-              <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Sign up today and unlock the power of idea detection.
-              </p>
-            </div>
-            <div className="w-full max-w-[400px] space-y-10">
-              <Input placeholder="Enter your email" type="email" />
-              <Button className="w-full h-10 my-10">Sign Up</Button>
-            </div>
-          </div>
+        <section className="min-w-[100%] flex flex-col py-8 px-4 items-center justify-center my-20">
+          <Card className="flex items-center justify-center bg-gray-900 text-white my-10">
+            <section className="py-12 flex items-center justify-center my-14">
+              <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6">
+                <div className="space-y-2">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Ready to get started?</h2>
+                  <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+                    Sign up today and <br/> unlock the power of idea detection.
+                  </p>
+                </div>
+                <div className="w-full max-w-[400px] space-y-10">
+                  <Input placeholder="Enter your email" className="bg-gray-800" variant="flat" type="email" isClearable/>
+                  <Button color="primary" className="w-full h-10 my-10" variant="shadow" type="submit">Sign Up</Button>
+                </div>
+              </div>
+            </section>
+          </Card>
         </section>
-
         {/* Footer */}
-
-        <div className="border-t border-gray-200">
-        <div className="container flex flex-col gap-4 py-4 px-4 md:flex-row md:items-center md:justify-between md:gap-6 md:px-6 lg:gap-8">
-          <Footer/>
-        </div>
-      </div>
-
-      </div>
+        
+        <Footer/>
+      </section>
     </>
   )
 }

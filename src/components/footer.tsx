@@ -1,40 +1,18 @@
+import { Card, Divider } from "@nextui-org/react";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <>
-      <footer className="bg-black dark:bg-gray-900">
+    <Card isBlurred radius="lg" className="bg-gray-1000 mx-7" shadow="md">
+      <footer className="dark:bg-gray-900 text-white">
         <div className="mx-auto max-w-full-xl pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
-              <h6 className="text-5xl">idetee</h6>
-              <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left dark:text-gray-400">
+              <h6 className="text-5xl text-center">Idetee</h6>
+              <p className="text-md mt-6 text-center text-gray-300">
                 Fueling your ideas to reality
               </p>
 
-              <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
-                {/* <li>
-                  <a
-                    href="#"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
-                  >
-                    <span className="sr-only">Facebook</span>
-                    <svg
-                      className="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li> */}
-
+              <ul className="mt-8 flex justify-center items-center gap-6 sm:justify-center md:gap-8">
                 <li>
                   <a
                     href="#"
@@ -99,79 +77,12 @@ export default function Footer() {
                     </svg>
                   </a>
                 </li>
-
-                {/* <li>
-                  <a
-                    href="#"
-                    rel="noreferrer"
-                    target="_blank"
-                    className="text-teal-700 transition hover:text-teal-700/75 dark:text-teal-500 dark:hover:text-teal-500/75"
-                  >
-                    <span className="sr-only">Dribbble</span>
-                    <svg
-                      className="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </li> */}
               </ul>
             </div>
 
-             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-              {/*<div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-gray-900 dark:text-white">
-                  Naviga
-                </p>
-
-                <ul className="mt-8 space-y-4 text-sm">
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="#"
-                    >
-                      Company History
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="#"
-                    >
-                      Meet the Team
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="#"
-                    >
-                      Employee Handbook
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                      href="#"
-                    >
-                      Careers
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
-
+             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2 justify-center ml-10">
               <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-gray-900 dark:text-white">
+                <p className="text-lg font-medium text-gray-400 dark:text-white">
                   Credits
                 </p>
 
@@ -215,7 +126,7 @@ export default function Footer() {
               </div>
 
               <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-gray-900 dark:text-white">
+                <p className="text-lg font-medium text-gray-400 dark:text-white">
                   Helpful Links
                 </p>
 
@@ -240,24 +151,17 @@ export default function Footer() {
 
                   <li>
                     <a
-                      className="group flex justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                      className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                       href="#"
                     >
-                      <span className="text-gray-700 transition group-hover:text-gray-700/75 dark:text-white dark:hover:text-white/75">
-                        Live Chat
-                      </span>
-
-                      <span className="relative flex h-2 w-2">
-                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75"></span>
-                        <span className="relative inline-flex size-2 rounded-full bg-teal-500"></span>
-                      </span>
+                      Live Chat
                     </a>
                   </li>
                 </ul>
               </div>
 
               <div className="text-center sm:text-left">
-                <p className="text-lg font-medium text-gray-900 dark:text-white">
+                <p className="text-lg font-medium text-gray-400 dark:text-white">
                   Contact Us
                 </p>
 
@@ -345,7 +249,8 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="mt-12 border-t border-gray-100 pt-6 dark:border-gray-800">
+          <Divider className="bg-gray-600 my-5"/>
+          <div className="mt-12 pt-6 dark:border-gray-800">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 <span className="block sm:inline">All rights reserved.</span>
@@ -374,6 +279,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-    </>
+    </Card>
   );
 }
