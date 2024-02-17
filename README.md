@@ -1,4 +1,4 @@
-# Insightify
+# Ideete
 
 Welcome to Insightify—where creativity meets validation. Submit your ideas, and instantly verify their uniqueness. If your idea needs a boost, our platform offers personalized suggestions to set it apart. Join us and elevate your ideas today.
 

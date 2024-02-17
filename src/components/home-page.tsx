@@ -1,6 +1,7 @@
 'use client'
 import { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
+import Footer from "./footer"
 import animationData from "@/assets/idea-anim.json"
 import { Button, ButtonGroup, Card, CardBody, CardFooter, Link, CardHeader, Divider, Image, Input } from "@nextui-org/react"
 
@@ -157,27 +158,24 @@ export function HomePage() {
         </section>
 
         {/* Footer */}
-
-        <div className="border-t border-gray-200">
-          <div className="container flex flex-col gap-4 py-4 px-4 md:flex-row md:items-center md:justify-between md:gap-6 md:px-6 lg:gap-8">
-            <p className="text-sm text-center text-gray-500 md:text-left dark:text-gray-400">
-              © 2023 Acme Inc. All rights reserved.
-            </p>
-            <nav className="flex items-center justify-center space-x-4 md:ml-auto">
-              <Link
-                className="inline-block text-xs font-medium underline transition-colors hover:text-gray-900 dark:hover:text-gray-50"
-                href="#"
-              >
-                Terms
-              </Link>
-              <Link
-                className="inline-block text-xs font-medium underline transition-colors hover:text-gray-900 dark:hover:text-gray-50"
-                href="#"
-              >
-                Privacy
-              </Link>
-            </nav>
-          </div>
+      <div className="border-t border-gray-200">
+        <div className="container flex flex-col gap-4 py-4 px-4 md:flex-row md:items-center md:justify-between md:gap-6 md:px-6 lg:gap-8">
+        
+          {/* <nav className="flex items-center justify-center space-x-4 md:ml-auto">
+            <Link
+              className="inline-block text-xs font-medium underline transition-colors hover:text-gray-900 dark:hover:text-gray-50"
+              href="#"
+            >
+              Terms
+            </Link>
+            <Link
+              className="inline-block text-xs font-medium underline transition-colors hover:text-gray-900 dark:hover:text-gray-50"
+              href="#"
+            >
+              Privacy
+            </Link>
+          </nav> */}
+          <Footer />
         </div>
       </div>
     </>
