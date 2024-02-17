@@ -43,7 +43,7 @@ export function HomePage() {
             <Card
               isFooterBlurred
               radius="lg"
-              className="bg-black relative lg:h-[600px] h-[40vh] overflow-hidden rounded-xl shadow-small before:bg-gray-900 max-sm:my-10 max-sm:mx-1"
+              className="bg-black relative lg:h-[600px] h-[40vh] overflow-hidden rounded-xl shadow-small before:bg-gray-900 max-sm:mx-1 mt-10"
             >
               <Image
                 alt="An Image of idea generation"
@@ -73,7 +73,7 @@ export function HomePage() {
         <section className="w-full flex flex-col gap-4 py-8 md:gap-10 md:px-6 items-center justify-center my-5 space-x-4">
           <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[90%]">
 
-        <Card className="min-w-[100%] bg-gray-900 text-white hover:bg-gray-800">
+        <Card className="min-w-[100%] bg-gray-900 text-white hover:bg-gray-850">
           <CardHeader className="flex gap-3">
             <p className="text-4xl font-bold">How it works</p>
           </CardHeader>
@@ -83,7 +83,7 @@ export function HomePage() {
               web for related content and returns
               a comprehensive report on the originality of your idea.</p>
           </CardBody>
-          <Divider className="bg-black"/>
+          <Divider className="bg-green-700"/>
           <CardFooter>
             <Link
               isExternal
