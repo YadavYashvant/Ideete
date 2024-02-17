@@ -30,13 +30,8 @@ export function HomePage() {
       
         <NavBar/>
         <div className="bg-gray-950 bg-grid-white/[0.1]">
-      {/* Radial gradient for the container to give a faded look */}
-      {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div> */}
-    
-    
         <section className="bg-gradient-to-r from-transparent to-gray-950 items-center">
-        <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12"
-        >
+        <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12">
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
             <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
               <div className="space-y-2 max-sm:mx-12">
@@ -81,15 +76,6 @@ export function HomePage() {
                 </Button>
               </CardFooter>
             </Card>
-
-            {/* <img
-              alt="Hero"
-              className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-video"
-              height="300"
-              src="https://res.cloudinary.com/djirdehhp/image/upload/v1633940003/idea-anim_1.gif"
-              width="500"
-            /> */}
-            
           </div>
         </section>
 
@@ -108,21 +94,6 @@ export function HomePage() {
           />
 
         </div>
-
-        {/* <div
-          className="h-[400vh] w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
-          ref={ref}>
-          <GoogleGeminiEffect
-            pathLengths={[
-              pathLengthFirst,
-              pathLengthSecond,
-              pathLengthThird,
-              pathLengthFourth,
-              pathLengthFifth,
-            ]}
-          />
-        </div> */}
-
         <section className="w-full flex flex-col gap-4 py-8 md:gap-10 md:px-6 items-center justify-center my-5 space-x-4">
           <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[90%]">
 
@@ -147,14 +118,6 @@ export function HomePage() {
             </Link>
           </CardFooter>
         </Card>
-
-            {/* <div className="flex flex-col items-center justify-center space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">How it works</h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                Our AI-powered platform scans the web for related content and returns a comprehensive report on the
-                originality of your idea.
-              </p>
-            </div> */}
             <div className="flex flex-col space-between items-center space-y-4 space-x-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl sm:my-10 mb-6 max-sm:mt-10">Key features</h2>
               <ul className="grid gap-4 sm:grid-cols-2">
