@@ -2,8 +2,9 @@
 import { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
 import animationData from "@/assets/idea-anim.json"
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Link, CardHeader, Divider, Image, Input, Textarea } from "@nextui-org/react"
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Link, CardHeader, Divider, Image, Input, Textarea} from "@nextui-org/react"
 import Footer from "./footer"
+//import { Textarea } from "@/components/ui/textarea"
 
 const isBrowser = typeof window !== "undefined";
 
@@ -15,7 +16,7 @@ export function HomePage() {
         <section className="bg-gradient-to-r from-transparent to-gray-900 items-center">
         <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12">
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
-            <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8 ">
+            <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8 max-sm:px-5">
               <div className="space-y-2 max-sm:mx-20">
                 <h1 className=" text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter sm:text-4xl my-6">Find your next big idea</h1>
                 <p className="text-2xl max-w-[700px] text-gray-500 md:text-2xl dark:text-gray-400">
@@ -23,17 +24,18 @@ export function HomePage() {
                   explored.
                 </p>
               </div>  
-                <Card isBlurred className="bg-gray-800 max-sm:mx-10 px-10 py-5">
+                <Card isBlurred className="bg-gray-800 mt-10 max-sm:mx-10 px-10 py-5 lg:h-[300px]">
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-4 md:items-center max-sm:flex max-sm:items-center max-sm:mx-auto">
                 <Textarea
-                  variant="faded"
-                  color="primary"
-                  label="Your Idea"
-                  className="text-black w-full"
-                  content="red"
+                  variant="underlined"
+                  color="success"
+                  rows={3}
+                  placeholder="Enter Your Idea"
+                  classNames={{ inputWrapper: "bg-gray-800", input: "text-white"}}
+                  className="text-white"
                 />
 
-                <Button color="success" size="lg"> Search </Button>
+                <Button color="success" size="lg" className="font-bold"> Search </Button>
                 </div>
                 </Card>
             </div>
@@ -41,7 +43,7 @@ export function HomePage() {
             <Card
               isFooterBlurred
               radius="lg"
-              className="bg-black relative w-full md:w-[500px] lg:h-[600px] h-[40vh] overflow-hidden rounded-xl shadow-small before:bg-gray-900 max-sm:mx-10 max-sm:my-10"
+              className="bg-black relative lg:h-[600px] h-[40vh] overflow-hidden rounded-xl shadow-small before:bg-gray-900 max-sm:my-10 max-sm:mx-10"
             >
               <Image
                 alt="An Image of idea generation"
@@ -100,8 +102,8 @@ export function HomePage() {
                 originality of your idea.
               </p>
             </div> */}
-            <div className="flex flex-col space-between items-center space-y-4 space-x-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl sm:my-10 mb-6">Key features</h2>
+            <div className="flex flex-col space-between items-center space-y-4 space-x-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl sm:my-10 mb-6 max-sm:mt-10">Key features</h2>
               <ul className="grid gap-4 sm:grid-cols-2">
                 <li className="flex space-x-4">
                   <Card className="bg-gray-900 text-white p-4">
@@ -164,7 +166,7 @@ export function HomePage() {
                 </div>
                 <div className="w-full max-w-[400px] space-y-10">
                   <Input placeholder="Enter your email" className="bg-gray-800" variant="flat" type="email" isClearable/>
-                  <Button color="primary" className="w-full h-10 my-10" variant="shadow" type="submit">Sign Up</Button>
+                  <Button color="success" className="w-full h-10 my-10" variant="shadow" type="submit">Sign Up</Button>
                 </div>
               </div>
             </section>
