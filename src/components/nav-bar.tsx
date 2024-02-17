@@ -22,7 +22,7 @@ export function NavBar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered isBlurred className="bg-gray-900">
+    <Navbar onMenuOpenChange={setIsMenuOpen} isBordered isBlurred className="bg-gray-1000">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -66,7 +66,7 @@ export function NavBar() {
           </Button>
         </NavbarItem>
       </NavbarContent>
-      <NavbarMenu className="bg-gray-900">
+      <NavbarMenu className="bg-gray-1000">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
