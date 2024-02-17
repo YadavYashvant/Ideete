@@ -1,105 +1,82 @@
+'user client'
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
 import { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
+<<<<<<< HEAD
 import Footer from "./footer"
+=======
+import animationData from "@/assets/idea-anim.json"
+import { Button, ButtonGroup, Card, CardFooter, Image } from "@nextui-org/react"
+
+const isBrowser = typeof window !== "undefined";
+>>>>>>> 0d65dac1ace81979f602361b5e76f19967f890d1
 
 export function HomePage() {
-  return (
+  return(
     <>
-      {
-        <NavBar />
-        /* <div className="bg-gray-50 border-t border-b border-gray-200">
-        <div className="container flex flex-col gap-4 justify-center py-4 px-4 text-center md:flex-row md:gap-6 md:px-6 lg:gap-8">
-        <Link
-            className="flex items-center justify-center space-x-2 text-2xl font-extrabold tracking-tighter rounded-full bg-gray-900 w-12 h-12 text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-            href="#"
-          >
-            <HomeIcon className="w-6 h-6" />
-            <span className="sr-only">Home</span>
-          </Link>
-          <nav className="flex items-center justify-center space-x-4 flex-1 min-h-[40px]">
-            <Link
-              className="flex items-center space-x-2 text-sm font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50"
-              href="#"
-            >
-              About
-            </Link>
-            <Link
-              className="flex items-center space-x-2 text-sm font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50"
-              href="#"
-            >
-              Features
-            </Link>
-            <Link
-              className="flex items-center space-x-2 text-sm font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50"
-              href="#"
-            >
-              Pricing
-            </Link>
-            <Link
-              className="flex items-center space-x-2 text-sm font-medium transition-colors hover:text-gray-900 dark:hover:text-gray-50"
-              href="#"
-            >
-              Contact
-            </Link>
-          </nav> 
-          <div className="flex items-center justify-center space-x-4 min-[300px]:ml-auto">
-            <Link
-              className="inline-block text-sm font-medium underline transition-colors hover:text-gray-900 dark:hover:text-gray-50"
-              href="#"
-            >
-              Log in
-            </Link>
-            <Link
-              className="inline-block text-sm font-medium underline transition-colors hover:text-gray-900 dark:hover:text-gray-50"
-              href="#"
-            >
-              Sign up
-            </Link>
-          </div>
-        </div>
-      </div>
-      */}
-      <section className="w-full py-6 md:py-12 lg:py-16">
+      <NavBar/>
+      <section className="w-full py-6 md:py-12 lg:py-16 flex item-center justify-center">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
-          <div className="space-y-4 md:mr-10 lg:mr-16 md:space-y-8">
+          <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Find your next big idea</h1>
-              <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+              <h1 className="text-5xl font-bold tracking-tighter sm:text-5xl my-6">Find your next big idea</h1>
+              <p className="max-w-[800px] text-gray-500 md:text-xl dark:text-gray-400">
                 The platform for discovering untapped potential. Enter your ideas below to see if they have already been
                 explored.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <div className="w-full max-w-[300px]">
-                <div className="relative">
+                <div className="relative w-full">
                   <Input className="w-full peer h-10" placeholder="Enter your idea" type="email" />
-                  <Button className="absolute top-0 right-0 h-10 translate-y-[-50%]">Submit</Button>
+                  {/* <Button className="top-0 right-0 h-10 translate-x-[230%] translate-y-[-100%] mx-6">Submit</Button> */}
+                  
                 </div>
               </div>
             </div>
           </div>
-          <img
+
+          <Card
+            isFooterBlurred
+            radius="lg"
+            className="border-none"
+          >
+            <Image
+              alt="Woman listing to music"
+              className="object-cover"
+              height={600}
+              src="https://www.elmhurst.edu/wp-content/uploads/2022/04/generate-ideas-illustration.jpg"
+              width={600}
+            />
+            <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+              <p className="text-tiny text-white/80">Available soon.</p>
+              <Button className="text-tiny text-white bg-black/20" variant="flat" color="default" radius="lg" size="sm">
+                Notify me
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* <img
             alt="Hero"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-video"
             height="300"
-            src="/placeholder.svg"
+            src="https://res.cloudinary.com/djirdehhp/image/upload/v1633940003/idea-anim_1.gif"
             width="500"
-          />
+          /> */}
+          
         </div>
       </section>
-      <div className="container flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6">
-        <div className="grid gap-4 md:grid-cols-2 xl:gap-8">
-          <div className="flex flex-col justify-center space-y-4">
+      <section className="container flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6 items-center justify-center">
+        <div className="grid gap-4 md:grid-cols-2 xl:gap-10 ml-40 item-center justify-center">
+          <div className="flex flex-col items-center justify-center space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">How it works</h2>
             <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
               Our AI-powered platform scans the web for related content and returns a comprehensive report on the
               originality of your idea.
             </p>
           </div>
-          <div className="flex flex-col justify-center space-y-4">
+          <div className="flex flex-col justify-center items-center space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Key features</h2>
             <ul className="grid gap-4 sm:grid-cols-2">
               <li className="flex space-x-4">
@@ -141,8 +118,8 @@ export function HomePage() {
             </ul>
           </div>
         </div>
-      </div>
-      <section className="w-full py-12">
+      </section>
+      <section className="w-full py-12 flex items-center justify-center my-14">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:px-6">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Ready to get started?</h2>
@@ -150,12 +127,15 @@ export function HomePage() {
               Sign up today and unlock the power of idea detection.
             </p>
           </div>
-          <div className="w-full max-w-[400px] space-y-2">
+          <div className="w-full max-w-[400px] space-y-10">
             <Input placeholder="Enter your email" type="email" />
-            <Button className="w-full h-10">Sign Up</Button>
+            <Button className="w-full h-10 my-10">Sign Up</Button>
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+
       <div className="border-t border-gray-200">
         <div className="container flex flex-col gap-4 py-4 px-4 md:flex-row md:items-center md:justify-between md:gap-6 md:px-6 lg:gap-8">
         
