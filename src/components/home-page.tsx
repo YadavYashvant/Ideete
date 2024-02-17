@@ -1,13 +1,17 @@
+'user client'
 import Link from "next/link"
 import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
 import { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
+import animationData from "@/assets/idea-anim.json"
+import { Button, ButtonGroup, Card, CardFooter, Image } from "@nextui-org/react"
+
+const isBrowser = typeof window !== "undefined";
 
 export function HomePage() {
-  return (
+  return(
     <>
-      <NavBar />
+      <NavBar/>
       <section className="w-full py-6 md:py-12 lg:py-16 flex item-center justify-center">
         <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
           <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
@@ -22,18 +26,41 @@ export function HomePage() {
               <div className="w-full max-w-[300px]">
                 <div className="relative w-full">
                   <Input className="w-full peer h-10" placeholder="Enter your idea" type="email" />
-                  <Button className="top-0 right-0 h-10 translate-x-[230%] translate-y-[-100%] mx-6">Submit</Button>
+                  {/* <Button className="top-0 right-0 h-10 translate-x-[230%] translate-y-[-100%] mx-6">Submit</Button> */}
+                  
                 </div>
               </div>
             </div>
           </div>
-          <img
+
+          <Card
+            isFooterBlurred
+            radius="lg"
+            className="border-none"
+          >
+            <Image
+              alt="Woman listing to music"
+              className="object-cover"
+              height={600}
+              src="https://www.elmhurst.edu/wp-content/uploads/2022/04/generate-ideas-illustration.jpg"
+              width={600}
+            />
+            <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+              <p className="text-tiny text-white/80">Available soon.</p>
+              <Button className="text-tiny text-white bg-black/20" variant="flat" color="default" radius="lg" size="sm">
+                Notify me
+              </Button>
+            </CardFooter>
+          </Card>
+
+          {/* <img
             alt="Hero"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-bottom sm:w-full lg:order-last lg:aspect-video"
             height="300"
-            src="/placeholder.svg"
+            src="https://res.cloudinary.com/djirdehhp/image/upload/v1633940003/idea-anim_1.gif"
             width="500"
-          />
+          /> */}
+          
         </div>
       </section>
       <section className="container flex flex-col gap-4 py-8 px-4 md:gap-10 md:px-6 items-center justify-center">
