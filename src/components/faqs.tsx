@@ -11,6 +11,12 @@ function Faqs(){
       const Content_3 = (
         <div>Begin your Ideete journey by visiting our website and registering for an account. Once signed up, unleash your creativity by submitting ideas and refining them using our intuitive platform. Join a community of innovators and turn your concepts into reality with Ideete support and guidance.</div>
       );
+      const Content_4 = (
+        <div>If your idea lacks uniqueness, Ideete provides personalized suggestions and enhancements tailored to differentiate it from existing concepts. Leveraging advanced algorithms, our platform offers invaluable insights and guidance, empowering you to refine and elevate your idea to stand out in the competitive landscape, ensuring its originality and impact.</div>
+      );
+      const Content_5 = (
+        <div>Yes, Ideete is completely free to use for all users. Our platform offers a seamless experience, allowing you to access its full range of features without any cost. Whether you are an aspiring entrepreneur or a creative thinker, you can leverage our resources to refine and enhance your ideas at no expense. Join us today and unleash your creativity!</div>
+      );
     return (
     <>
     <Accordion
@@ -61,6 +67,12 @@ function Faqs(){
       </AccordionItem>
       <AccordionItem key="3" aria-label="Accordion 3" title="How can I get started with Ideete?">
         {Content_3}
+      </AccordionItem>
+      <AccordionItem key="4" aria-label="Accordion 4" title="What happens if my idea is not unique?">
+        {Content_4}
+      </AccordionItem>
+      <AccordionItem key="5" aria-label="Accordion 5" title="Is Ideete free to use?">
+        {Content_5}
       </AccordionItem>
     </Accordion>
     </>
