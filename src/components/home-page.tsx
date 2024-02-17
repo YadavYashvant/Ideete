@@ -2,14 +2,11 @@
 import Link from "next/link"
 import { JSX, SVGProps } from "react"
 import { NavBar } from "./nav-bar"
-<<<<<<< HEAD
 import Footer from "./footer"
-=======
 import animationData from "@/assets/idea-anim.json"
 import { Button, ButtonGroup, Card, CardFooter, Image, Input } from "@nextui-org/react"
 
 const isBrowser = typeof window !== "undefined";
->>>>>>> 0d65dac1ace81979f602361b5e76f19967f890d1
 
 export function HomePage() {
   return(
