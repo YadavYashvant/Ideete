@@ -10,9 +10,9 @@ export default function App() {
   const [isVisible, setIsVisible] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
   return (
-
-    <div className="flex justify-center items-center h-screen bg-black/35"  >
-        <Card className="w-96 h-96 bg-white">
+    <div className="flex justify-center items-center h-screen bg-gray-960 bg-dot-white/[0.6]"  >
+      <section className="bg-gradient-to-r from-transparent to-gray-950">
+        <Card className="w-[420px] h-[500px] bg-gray-900">
       <CardHeader className="flex gap-3 items-center justify-center" >
         <Image
           alt="nextui logo"
@@ -22,26 +22,24 @@ export default function App() {
           width={40}
         />
         <div className="flex flex-col">
-          <p className="text-md">Ideete</p>
-          <p className="text-small text-default-500">Login or SignUp</p>
+          <p className="text-lg text-default-100">Ideete</p>
+          <p className="text-small text-default-300">Login or SignUp</p>
         </div>
       </CardHeader>
-      <Divider/>
+      <Divider className="bg-white/50"/>
       <CardBody>
       <Input
       isClearable
       type="email"
       label="Email"
       variant="bordered"
-      placeholder="Enter your email"
       // defaultValue="junior@nextui.org"
       onClear={() => console.log("input cleared")}
-      className="max-w-xs mt-5 ml-4"
+      className="max-w-xs mt-5 ml-4 text-white"
     />
       <Input
       label="Password"
       variant="bordered"
-      placeholder="Enter your password"
       endContent={
         <button className="focus:outline-none" type="button" onClick={toggleVisibility}>
           {isVisible ? (
@@ -52,26 +50,27 @@ export default function App() {
         </button>
       }
       type={isVisible ? "text" : "password"}
-      className="max-w-xs mt-5 ml-4"
+      className="max-w-xs mt-5 ml-4 text-white"
     />
       </CardBody>
       <Divider/>
       <CardFooter className="flex justify-between">
-      <Button color="primary" variant="faded">
+      <Button color="default" className="bg-gray-300 border-none" variant="faded">
         Sign in
       </Button>
       <Link color="primary" href="#">
         Forgot password?
       </Link>
       </CardFooter>
-      <Divider/>
+      <Divider className="bg-white/30 my-5"/>
       <CardFooter className="flex justify-between"> 
-      <p className="text-sm w-24">Don&apos;t have an account?</p>
-      <Button color="primary" variant="faded"> 
+      <p className="text-sm w-24 text-white/60">Don&apos;t have an account?</p>
+      <Button color="default" className="bg-gray-300 border-none" variant="faded"> 
         Sign up
       </Button>
       </CardFooter>
     </Card>
+    </section>
       </div>
     
   );
