@@ -7,6 +7,8 @@ import { Button, ButtonGroup, Card, CardBody, CardFooter, Link, CardHeader, Divi
 import Footer from "./footer"
 import { GoogleGeminiEffect } from "./ui/gemini-effect";
 import Faqs from "./faqs";
+import { TextGenerateEffect } from "./ui/textgenerate";
+import { Spotlight } from "./ui/spotlight";
 //import { Textarea } from "@/components/ui/textarea"
 
 const isBrowser = typeof window !== "undefined";
@@ -28,19 +30,21 @@ export function HomePage() {
 
   return(
       <>
-      
-        <NavBar/>
-        <div className="bg-gray-950 bg-grid-white/[0.1]">
+        <div className="bg-gray-960 bg-dot-white/[0.5]">
         <section className="bg-gradient-to-r from-transparent to-gray-950 items-center">
         <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12">
+          <Spotlight
+          className="-right-40 md:left-60 md:-top-20"
+          fill="white"
+          />
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
             <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
               <div className="space-y-2 max-sm:mx-12">
-                <h1 className=" text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter sm:text-4xl my-6">Find your next big idea</h1>
-                <p className="text-2xl max-w-[700px] text-gray-500 md:text-2xl dark:text-gray-400">
-                  The platform for discovering untapped potential. Enter your ideas below to see if they have already been
-                  explored.
-                </p>
+                <TextGenerateEffect words="Find your next big idea" className="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter sm:text-4xl my-6"/>
+                {/* <h1 className=" text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter sm:text-4xl my-6">Find your next big idea</h1> */}
+                <TextGenerateEffect className="text-2xl max-w-[700px] text-gray-500 md:text-2xl dark:text-gray-400"
+                  words="The platform for discovering untapped potential. Enter your ideas below to see if they have already been
+                  explored."/>
               </div>  
                 <Card isBlurred className="bg-gray-800 mt-10 max-sm:mx-1 px-10 py-5 lg:h-[300px]">
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-4 md:items-center max-sm:flex max-sm:items-center max-sm:mx-auto">
@@ -81,7 +85,7 @@ export function HomePage() {
         </section>
 
         <div
-          className="h-[300vh] w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+          className="h-[350vh] w-full dark:border dark:border-white/[0.1] relative pt-20 pb-20 md:pt-40 lg:pt-20"
           ref={ref}>
 
           <GoogleGeminiEffect
@@ -92,10 +96,11 @@ export function HomePage() {
               pathLengthFourth,
               pathLengthFifth,
             ]}
+            className="h-[100vh] w-full"
           />
 
         </div>
-        <section className="w-full flex flex-col gap-4 py-8 md:gap-10 md:px-6 items-center justify-center my-5 space-x-4">
+        <section className="w-full flex flex-col gap-4 py-8 md:gap-10 md:px-6 items-center justify-center my-5 space-x-4 lg:mt-20">
           <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[90%]">
 
         <Card className="min-w-[100%] bg-gray-900 text-white hover:bg-gray-850">
@@ -198,7 +203,7 @@ export function HomePage() {
           </Card>
 
           <Card className="p-10 bg-gray-800 w-[90%] flex items-center justify-center">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl sm:my-10 max-sm:mt-10">FAQs</h2>
+          <h2 className="text-3xl text-white font-bold tracking-tighter sm:text-5xl sm:my-10 max-sm:mt-10">FAQs</h2>
           <Faqs/>
           </Card>
 
