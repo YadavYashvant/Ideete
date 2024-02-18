@@ -68,7 +68,7 @@ export default function App() {
       </CardFooter>
       <Divider/>
       <CardFooter className="flex justify-between"> 
-      <p className="text-sm w-24">Don't have an account?</p>
+      <p className="text-sm w-24">Don&apos;t have an account?</p>
       <Button color="primary" variant="faded"> 
         Sign up
       </Button>
