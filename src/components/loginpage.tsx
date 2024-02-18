@@ -1,11 +1,12 @@
+"use client"
 import { Card, Divider, Input } from "@nextui-org/react";
-import {EyeFilledIcon} from "./ui/EyeFilledIcon";
-import {EyeSlashFilledIcon} from "./ui/EyeSlashFilledIcon";
+import {EyeFilledIcon} from "../app/Auth/EyeFilledIcon";
+import {EyeSlashFilledIcon} from "../app/Auth/EyeSlashFilledIcon";
 import Link from "next/link";
 import React from 'react';
 
-export default function LoginPage() {c
-    const [isVisible, setIsVisible] = React.useState(false);
+export default function LoginPage() {
+  const [isVisible, setIsVisible] = React.useState(false);
   const toggleVisibility = () => setIsVisible(!isVisible);
   return (
     <>
