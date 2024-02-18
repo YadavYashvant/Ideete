@@ -7,6 +7,7 @@ import { Button, ButtonGroup, Card, CardBody, CardFooter, Link, CardHeader, Divi
 import Footer from "./footer"
 import { GoogleGeminiEffect } from "./ui/gemini-effect";
 import Faqs from "./faqs";
+import { TextGenerateEffect } from "./ui/textgenerate";
 //import { Textarea } from "@/components/ui/textarea"
 
 const isBrowser = typeof window !== "undefined";
@@ -36,11 +37,11 @@ export function HomePage() {
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
             <div className="space-y-6 md:mr-10 lg:mr-16 md:space-y-8">
               <div className="space-y-2 max-sm:mx-12">
-                <h1 className=" text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter sm:text-4xl my-6">Find your next big idea</h1>
-                <p className="text-2xl max-w-[700px] text-gray-500 md:text-2xl dark:text-gray-400">
-                  The platform for discovering untapped potential. Enter your ideas below to see if they have already been
-                  explored.
-                </p>
+                <TextGenerateEffect words="Find your next big idea" className="text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter sm:text-4xl my-6"/>
+                {/* <h1 className=" text-4xl md:text-6xl lg:text-6xl font-bold tracking-tighter sm:text-4xl my-6">Find your next big idea</h1> */}
+                <TextGenerateEffect className="text-2xl max-w-[700px] text-gray-500 md:text-2xl dark:text-gray-400"
+                  words="The platform for discovering untapped potential. Enter your ideas below to see if they have already been
+                  explored."/>
               </div>  
                 <Card isBlurred className="bg-gray-800 mt-10 max-sm:mx-1 px-10 py-5 lg:h-[300px]">
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-4 md:items-center max-sm:flex max-sm:items-center max-sm:mx-auto">
