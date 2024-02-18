@@ -36,7 +36,7 @@ export function HomePage() {
         <section className="bg-gradient-to-r from-transparent to-gray-950 items-center">
         <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12">
           <Spotlight
-          className="-top-40 right-0 md:left-60 md:-top-20"
+          className="-right-40 md:left-60 md:-top-20"
           fill="white"
           />
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
