@@ -1,5 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
+import { Button } from "@nextui-org/react";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
 
@@ -25,14 +26,14 @@ export const GoogleGeminiEffect = ({
     <p className="text-lg md:text-7xl font-bold pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         {title || `IDEETE`}
       </p>
-      <p className="text-s md:text-xl font-bold text-center text-neutral-500 mt-4 max-w-lg mx-auto">
+      <p className="text-s md:text-xl font-bold text-center text-neutral-500 mt-4 mx-auto max-sm:mx-5">
         {description ||
           `We search against various patented ideas and concepts to make sure that your idea is unique and original. We also provide a platform for you to share your idea with the world.`}
       </p>
       <div className="w-full h-[890px] -top-60 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
-        <button className="font-bold bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto ">
+        <Button className="font-bold bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs w-fit mx-auto max-sm:mt-20 ">
           Scroll Down
-        </button>
+        </Button>
       </div>
       
       <svg

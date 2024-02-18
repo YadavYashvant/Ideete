@@ -1,6 +1,7 @@
-//import { Accordion, AccordionItem } from "@nextui-org/react";
+import { cn } from "@/lib/utils";
+import { Accordion, AccordionItem, colorVariants, colors, commonColors } from "@nextui-org/react";
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
+//import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
 
 function Faqs(){
 
@@ -22,7 +23,7 @@ function Faqs(){
     return (
     <>
 
-    <Accordion type="single" collapsible className="w-full text-white">
+    {/* <Accordion type="single" collapsible className="w-full text-white">
           <AccordionItem value="item1">
             <AccordionTrigger>What is Ideete?</AccordionTrigger>
             <AccordionContent>
@@ -53,9 +54,9 @@ function Faqs(){
               {Content_3}
             </AccordionContent>
           </AccordionItem>
-      </Accordion>
+      </Accordion> */}
 
-    {/* <Accordion
+    <Accordion
       motionProps={{
         variants: {
           enter: {
@@ -95,22 +96,22 @@ function Faqs(){
       variant="splitted"
       className="my-5"
     >
-      <AccordionItem className="bg-gray-900" key="1" aria-label="Accordion 1" title="What is Ideete?">
+      <AccordionItem className={cn("bg-gray-600 text-white",colors)} key="1" aria-label="Accordion 1" title="What is Ideete?">
         {Content_1}
       </AccordionItem>
-      <AccordionItem key="2" aria-label="Accordion 2" title="How does Ideete work?">
+      <AccordionItem className={cn("bg-gray-600 text-white",colors)} key="2" aria-label="Accordion 2" title="How does Ideete work?">
         {Content_2}
       </AccordionItem>
-      <AccordionItem key="3" aria-label="Accordion 3" title="How can I get started with Ideete?">
+      <AccordionItem className={cn("bg-gray-600 text-white",colors)} key="3" aria-label="Accordion 3" title="How can I get started with Ideete?">
         {Content_3}
       </AccordionItem>
-      <AccordionItem key="4" aria-label="Accordion 4" title="What happens if my idea is not unique?">
+      <AccordionItem className={cn("bg-gray-600 text-white",colors)} key="4" aria-label="Accordion 4" title="What happens if my idea is not unique?">
         {Content_4}
       </AccordionItem>
-      <AccordionItem key="5" aria-label="Accordion 5" title="Is Ideete free to use?">
+      <AccordionItem className={cn("bg-gray-600 text-white",colors)} key="5" aria-label="Accordion 5" title="Is Ideete free to use?">
         {Content_5}
       </AccordionItem>
-    </Accordion> */}
+    </Accordion>
     </>
     );
 }

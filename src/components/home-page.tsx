@@ -81,7 +81,7 @@ export function HomePage() {
         </section>
 
         <div
-          className="h-[300vh] w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+          className="h-[400vh] w-full dark:border dark:border-white/[0.1] rounded-md relative pt-20 pb-20 md:pt-40 md:pb-40 lg:pt-60 lg:pb-60"
           ref={ref}>
 
           <GoogleGeminiEffect
