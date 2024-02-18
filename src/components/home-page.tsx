@@ -30,7 +30,7 @@ export function HomePage() {
       <>
       
         <NavBar/>
-        <div className="bg-gray-950 bg-grid-white/[0.1]">
+        <div className="bg-gray-960 bg-dot-white/[0.5]">
         <section className="bg-gradient-to-r from-transparent to-gray-950 items-center">
         <section className="w-90% py-6 md:py-12 lg:py-16 flex item-center justify-center space-y-30 mb-12">
           <div className="container flex flex-col items-center justify-center gap-4 px-4 text-center md:gap-10 md:flex-row md:px-6 lg:gap-16">
