@@ -87,7 +87,7 @@ export function HomePage() {
         </section>
 
         <div
-          className="h-[400vh] w-full dark:border dark:border-white/[0.1] rounded-md relative pt-20 pb-20 md:pt-40 md:pb-40 lg:pt-60 lg:pb-60"
+          className="h-[350vh] w-full dark:border dark:border-white/[0.1] relative pt-20 pb-20 md:pt-40 lg:pt-20"
           ref={ref}>
 
           <GoogleGeminiEffect
@@ -98,10 +98,11 @@ export function HomePage() {
               pathLengthFourth,
               pathLengthFifth,
             ]}
+            className="h-[100vh] w-full"
           />
 
         </div>
-        <section className="w-full flex flex-col gap-4 py-8 md:gap-10 md:px-6 items-center justify-center my-5 space-x-4">
+        <section className="w-full flex flex-col gap-4 py-8 md:gap-10 md:px-6 items-center justify-center my-5 space-x-4 lg:mt-20">
           <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[90%]">
 
         <Card className="min-w-[100%] bg-gray-900 text-white hover:bg-gray-850">
