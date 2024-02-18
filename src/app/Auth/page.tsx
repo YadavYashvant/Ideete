@@ -5,8 +5,6 @@ import {Input} from "@nextui-org/react";
 import {EyeFilledIcon} from "./EyeFilledIcon";
 import {EyeSlashFilledIcon} from "./EyeSlashFilledIcon";
 import {Button} from "@nextui-org/react";
-import { Container } from "@nextui-org/react";
-
 
 export default function App() {
   const [isVisible, setIsVisible] = React.useState(false);
