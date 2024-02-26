@@ -46,14 +46,13 @@ export function HomePage() {
                   words="The platform for discovering untapped potential. Enter your ideas below to see if they have already been
                   explored."/>
               </div>  
-                <Card isBlurred className="bg-gray-800 mt-10 max-sm:mx-1 px-10 py-5 lg:h-[300px]">
+                <Card isBlurred className="mt-10 max-sm:mx-1 px-10 py-5 lg:h-[300px]">
                 <div className="flex w-full flex-wrap md:flex-nowrap gap-4 md:items-center max-sm:flex max-sm:items-center max-sm:mx-auto">
                 <Textarea
                   variant="underlined"
                   color="success"
                   rows={3}
                   placeholder="Enter Your Idea"
-                  classNames={{ inputWrapper: "bg-gray-800", input: "text-white"}}
                   className="text-white"
                 />
 

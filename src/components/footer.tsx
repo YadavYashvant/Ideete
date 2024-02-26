@@ -257,7 +257,7 @@ export default function Footer() {
 
                 <a
                   className="inline-block text-teal-600 underline transition hover:text-teal-600/75 dark:text-teal-500 dark:hover:text-teal-500/75"
-                  href="#"
+                  href="/tensorflow"
                 >
                   Terms & Conditions
                 </a>
