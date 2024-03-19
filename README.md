@@ -1,15 +1,15 @@
 # Ideete
 
-Welcome to Insightify—where creativity meets validation. Submit your ideas, and instantly verify their uniqueness. If your idea needs a boost, our platform offers personalized suggestions to set it apart. Join us and elevate your ideas today.
+Welcome to Ideete where creativity meets validation. Submit your ideas, and instantly verify their uniqueness. If your idea needs a boost, our platform offers personalized suggestions to set it apart. Join us and elevate your ideas today.
 
 
 ## Acknowledgements
 
-We would like to express our gratitude to the following individuals and organizations for their contributions and support:
+We would like to express our gratitude to the following individuals / organizations:
 
- - [The Next.js Development Team](https://nextjs.org/)
- - [The TypeScript Development Team](https://www.typescriptlang.org/)
- - [The Tailwind CSS Development Team](https://tailwindcss.com/)
+ - [The Next.js](https://nextjs.org/)
+ - [TypeScript](https://www.typescriptlang.org/)
+ - [The Tailwind CSS](https://tailwindcss.com/)
 
 
 
