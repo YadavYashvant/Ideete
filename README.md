@@ -17,7 +17,7 @@ We would like to express our gratitude to the following individuals / organizati
 
 ### Contributing Guidelines
 
-We welcome contributions from the community to improve Insightify. Before contributing, please take a moment to review the following guidelines:
+We welcome contributions from the community to improve Ideete. Before contributing, please take a moment to review the following guidelines:
 
  - Reporting Issues: If you encounter a bug or have a feature request, please check the existing issues to see if it has already been reported. If not, feel free to open a new issue with a detailed description.
 
@@ -40,9 +40,9 @@ Please adhere to this project's `code of conduct`.
 
 ## Demo
 
-To see Insightify in action, you can visit our website:
+To see Ideete in action, you can visit our website:
 
-[Insightify](#)
+[Ideete](#)
 
 Please note that this is a simplified demonstration. For a more interactive experience, we encourage you to sign up and explore the full capabilities of Insightify.
 
@@ -53,22 +53,22 @@ Please note that this is a simplified demonstration. For a more interactive expe
 
 ## FAQ
 
-#### What is Insightify?
+#### What is Ideete?
 
-Insightify is a platform designed to help users refine and enhance their ideas by checking their uniqueness and providing personalized suggestions for improvement.
+Ideete is a platform designed to help users refine and enhance their ideas by checking their uniqueness and providing personalized suggestions for improvement.
 
-#### How does Insightify work?
+#### How does Ideete work?
 
 Users can submit their ideas through the platform, which then checks the uniqueness of those ideas against existing ones. If an idea lacks uniqueness, the platform offers personalized suggestions to differentiate it from existing ideas.
 
 #### What happens if my idea is not unique?
 
-If your idea is not unique, Insightify provides personalized suggestions and enhancements to help differentiate it from existing ideas.
+If your idea is not unique, Ideete provides personalized suggestions and enhancements to help differentiate it from existing ideas.
 
-#### Is Insightify free to use?
+#### Is Ideete free to use?
 
-Yes, Insightify is free to use for all users. Simply sign up and start submitting your ideas for refinement.
+Yes, Ideete is free to use for all users. Simply sign up and start submitting your ideas for refinement.
 
-How can I get started with Insightify?
+How can I get started with Ideete?
 
-To get started with Insightify, simply visit our website and sign up for an account. Once registered, you can start submitting your ideas and refining them with the help of our platform.
+To get started with Ideete, simply visit our website and sign up for an account. Once registered, you can start submitting your ideas and refining them with the help of our platform.
