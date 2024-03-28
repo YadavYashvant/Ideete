@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-960 bg-dot-white/[0.6]"  >
       <section className="bg-gradient-to-r from-transparent to-gray-950">
-        <Card className="w-[420px] h-[500px] bg-gray-900">
+        <Card className="w-[420px] h-[500px]">
       <CardHeader className="flex gap-3 items-center justify-center" >
         <Image
           alt="nextui logo"
@@ -22,8 +22,8 @@ export default function App() {
           width={40}
         />
         <div className="flex flex-col">
-          <p className="text-lg text-default-100">Ideete</p>
-          <p className="text-small text-default-300">Login or SignUp</p>
+          <p className="text-lg text-default-100 text-white">Ideete</p>
+          <p className="text-small text-default-300 text-white">Login or SignUp</p>
         </div>
       </CardHeader>
       <Divider className="bg-white/50"/>
@@ -55,7 +55,7 @@ export default function App() {
       </CardBody>
       <Divider/>
       <CardFooter className="flex justify-between">
-      <Button color="default" className="bg-gray-300 border-none" variant="faded">
+      <Button color="default" className="border-none" variant="faded">
         Sign in
       </Button>
       <Link color="primary" href="#">
@@ -65,7 +65,7 @@ export default function App() {
       <Divider className="bg-white/30 my-5"/>
       <CardFooter className="flex justify-between"> 
       <p className="text-sm w-24 text-white/60">Don&apos;t have an account?</p>
-      <Button color="default" className="bg-gray-300 border-none" variant="faded"> 
+      <Button color="default" className="border-none" variant="faded"> 
         Sign up
       </Button>
       </CardFooter>
