@@ -3,6 +3,14 @@
 import { useState, useEffect, ChangeEvent } from 'react';
 import Head from 'next/head';
 
+export default function TensorflowPlaceholder() {
+  return(
+    <div>
+      Placeholder
+    </div>
+  )
+}
+
 /*
 export default function Home() {
   const [model, setModel] = useState<use.UniversalSentenceEncoder | null>(null);
