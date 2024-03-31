@@ -2,9 +2,8 @@
 "use client"
 import { useState, useEffect, ChangeEvent } from 'react';
 import Head from 'next/head';
-import * as tf from '@tensorflow/tfjs';
-import * as use from '@tensorflow-models/universal-sentence-encoder';
 
+/*
 export default function Home() {
   const [model, setModel] = useState<use.UniversalSentenceEncoder | null>(null);
   const [inputText, setInputText] = useState<string>('');
@@ -64,3 +63,4 @@ export default function Home() {
     </div>
   );
 }
+*/
