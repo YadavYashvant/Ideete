@@ -42,7 +42,7 @@ Please adhere to this project's `code of conduct`.
 
 To see Ideete in action, you can visit our website:
 
-[Ideete](#)
+[ideete.vercel.app](https://ideete.vercel.app)
 
 Please note that this is a simplified demonstration. For a more interactive experience, we encourage you to sign up and explore the full capabilities of Insightify.
 
