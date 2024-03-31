@@ -102,33 +102,66 @@ export function HomePage() {
         <section className="w-full flex flex-col gap-4 py-8 md:gap-10 md:px-6 items-center justify-center my-5 space-x-4 lg:mt-20">
           <div className="grid gap-4 md:grid-cols-2 item-center justify-center max-w-[90%]">
 
-        <Card className="min-w-[100%] bg-gray-900 text-white hover:bg-gray-850">
+        <Card className="min-w-[90%] bg-gray-900 text-white hover:bg-gray-850 p-10">
           <CardHeader className="flex gap-3">
             <p className="text-4xl font-bold">How it works</p>
           </CardHeader>
-          <Divider className="bg-black"/>
-          <CardBody>
+          <Divider className=" bg-gray-600"/>
+          <CardBody className="py-10">
             <p className="text-lg">Our AI-powered platform scans the 
               web for related content and returns
               a comprehensive report on the originality of your idea.</p>
           </CardBody>
-          <Divider className="bg-green-700"/>
+          <Divider className="bg-green-600"/>
           <CardFooter>
             <Link
               isExternal
               showAnchorIcon
-              href="https://github.com/"
+              href="https://github.com/YadavYashvant/Ideete"
             >
               Visit source code on GitHub
             </Link>
           </CardFooter>
         </Card>
-            <div className="flex flex-col space-between items-center space-y-4 space-x-2">
+            <div className="flex flex-col space-between items-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl sm:my-10 mb-6 max-sm:mt-10">Key features</h2>
-              <ul className="grid gap-4 sm:grid-cols-2">
+              <ul className="max-sm:min-w-[95%] grid gap-5 sm:grid-cols-2 max-sm:flex-col max-sm:items-center">
+              <li className="flex space-x-4">
+                  <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800 max-sm:p-28">
+                  <CheckCircleIcon className="h-6 w-7 flex-shrink-0 my-2" />
+                  <div>
+                    <h3 className="font-semibold max-sm:text-2xl">Real-time analysis</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 max-sm:text-xl">
+                     Get instant feedback on the originality of your idea.
+                    </p>
+                  </div>
+                  </Card>
+                </li>
                 <li className="flex space-x-4">
+                  <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800 max-sm:p-28">
+                  <CheckCircleIcon className="h-6 w-7 flex-shrink-0 my-2" />
+                  <div>
+                    <h3 className="font-semibold max-sm:text-2xl">Comprehensive search</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 max-sm:text-xl">
+                     Our platform scours the web to find similar concepts.
+                    </p>
+                  </div>
+                  </Card>
+                </li>
+                <li className="flex space-x-4">
+                  <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800 max-sm:p-28">
+                  <CheckCircleIcon className="h-6 w-7 flex-shrink-0 my-2" />
+                  <div>
+                    <h3 className="font-semibold max-sm:text-2xl">Collaboration tools</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 max-sm:text-xl">
+                     Share your findings with team members and experts.
+                    </p>
+                  </div>
+                  </Card>
+                </li>
+                {/* <li className="flex space-x-4">
                   <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800">
-                  <CheckCircleIcon className="h-5 w-5 flex-shrink-0 my-2" />
+                  <CheckCircleIcon className="h-5 w-6 flex-shrink-0 my-2" />
                   <div>
                     <h3 className="font-semibold">Real-time analysis</h3>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -158,13 +191,13 @@ export function HomePage() {
                     </p>
                   </div>
                   </Card>
-                </li>
+                </li> */}
                 <li className="flex space-x-4">
-                  <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800">
-                  <CheckCircleIcon className="h-5 w-5 flex-shrink-0 my-2" />
+                  <Card className="bg-gray-900 text-white p-4 hover:bg-gray-800 max-sm:p-28">
+                  <CheckCircleIcon className="h-6 w-7 flex-shrink-0 my-2" />
                   <div>
-                    <h3 className="font-semibold">Customizable alerts</h3>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                    <h3 className="font-semibold max-sm:text-2xl">Customizable alerts</h3>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 max-sm:text-xl">
                       Set up notifications for new developments in your field.
                     </p>
                   </div>
